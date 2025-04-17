@@ -1,0 +1,50 @@
+.app-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.canvas-container {
+  flex: 1;
+  border: 1px solid #ddd;
+  background-color: #f8f9fa;
+}
+
+.status-bar {
+  padding: 8px 16px;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.upload-prompt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  padding: 2rem;
+}
+
+.upload-prompt h2 {
+  margin-bottom: 1rem;
+}
+
+.upload-prompt p {
+  margin-bottom: 2rem;
+}
+
+.heat-map-button-container {
+  padding: 10px;
+  text-align: center;
+  background-color: #f8f9fa;
+  border-top: 1px solid #ddd;
+}

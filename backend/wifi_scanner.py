@@ -8,7 +8,8 @@ logger = logging.getLogger(__name__)
 
 class MacOSWiFiScanner:
     """macOS-specific WiFi scanner for retrieving current connection information"""
-    def get_wifi_info(self) -> Dict[str,Any]:
+    @staticmethod
+    def get_wifi_info() -> Dict[str,Any]:
         """
         Get current WiFi information using wdutil on macOS.
         """
