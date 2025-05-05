@@ -169,7 +169,7 @@ def generate_heatmap():
                 app.logger.error(f"Error loading floor plan: {e}")
         
         # Create contour plot
-        contour = ax.contourf(X, Y, Z, cmap='RdYlGn_r', alpha=0.6, levels=15, extent=extent)
+        contour = ax.contourf(X, Y, Z, cmap='RdYlGn', alpha=0.6, levels=15, extent=extent)
         
         # Add colorbar
         fig.colorbar(contour, ax=ax, label='Signal Strength (dBm)')
