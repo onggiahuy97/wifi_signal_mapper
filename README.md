@@ -1,4 +1,4 @@
-# WiFi Signal Mapper
+# WiFi Signal Mapper (MacOS supported only)
 
 A web application that maps WiFi signal strength across a floor plan to identify areas with strong and weak connectivity.
 
