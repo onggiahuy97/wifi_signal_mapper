@@ -164,12 +164,12 @@ def generate_heatmap():
         if floor_plan:
             try:
                 img = Image.open(floor_plan['path'])
-                ax.imshow(np.array(img), extent=extent, origin='upper', aspect='equal', alpha=0.5)
+                ax.imshow(np.array(img), extent=extent, origin='upper', aspect='equal', alpha=0.9)
             except Exception as e:
                 app.logger.error(f"Error loading floor plan: {e}")
         
         # Create contour plot
-        contour = ax.contourf(X, Y, Z, cmap='RdYlGn_r', alpha=0.7, levels=15, extent=extent)
+        contour = ax.contourf(X, Y, Z, cmap='RdYlGn_r', alpha=0.6, levels=15, extent=extent)
         
         # Add colorbar
         fig.colorbar(contour, ax=ax, label='Signal Strength (dBm)')

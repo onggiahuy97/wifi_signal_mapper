@@ -1,5 +1,4 @@
 import logging 
-import os 
 import re 
 import subprocess
 from typing import Dict, Any 
@@ -20,7 +19,7 @@ class MacOSWiFiScanner:
                 ["sudo", "wdutil", "info"],
                 capture_output=True,
                 text=True, 
-                timeout=5
+                timeout=10
             )
 
             # Parse the output
